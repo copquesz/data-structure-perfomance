@@ -93,18 +93,18 @@ freqTree.put(num, freqTree.getOrDefault(num, 0) + 1);
 - Collections.sort() completed in milliseconds.
 
 
-Why is List O(n²) for duplicate checking?
-Each element is compared to every other → roughly n * (n-1)/2 comparisons → O(n²).
-
-Why is Set O(n)?
-Each add() in HashSet has an average O(1) cost; for n elements → O(n) total.
-
-Why is TreeMap O(log n) per operation?
-TreeMap uses balanced trees (Red-Black) with O(log n) per insert/update → O(n log n) for n elements.
-
 ---
 
 ## Mathematical Analysis
+
+**Why is List O(n²) for duplicate checking?**
+- Each element is compared to every other → roughly n * (n-1)/2 comparisons → O(n²).
+
+**Why is Set O(n)?**
+- Each add() in HashSet has an average O(1) cost; for n elements → O(n) total.
+
+**Why is TreeMap O(log n) per operation?**
+- TreeMap uses balanced trees (Red-Black) with O(log n) per insert/update → O(n log n) for n elements.
 
 | Task                 | Algorithm/Data Structure   | Complexity | Scales for large datasets?        |
 |----------------------|----------------------------|------------|-----------------------------------|
