@@ -84,6 +84,8 @@ freqTree.put(num, freqTree.getOrDefault(num, 0) + 1);
 
 ## Mathematical Analysis
 
+![image](https://github.com/user-attachments/assets/cb064a19-dba5-4b2f-9628-8378b0011bcc)
+
 **Why is List O(n²) for duplicate checking?**
 - Each element is compared to every other → roughly n * (n-1)/2 comparisons → O(n²).
 
