@@ -10,7 +10,6 @@
 - [Study Cases](#study-cases)
 - [Mathematical Analysis](#mathematical-analysis)
 - [Conclusions](#conclusions)
-- [Running the Benchmarks](#running-the-benchmarks)
 - [References](#references)
 
 ---
