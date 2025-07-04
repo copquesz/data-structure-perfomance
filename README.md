@@ -2,8 +2,6 @@
 
 > **Purpose:** Demonstrate, with real Java benchmarks, the impact of different data structures and algorithms on performance in tasks like duplicate checking, frequency counting, and sorting.
 
-
-
 ## 📖 Table of Contents
 
 - [Context](#context)
@@ -12,14 +10,10 @@
 - [Conclusions](#conclusions)
 - [References](#references)
 
----
-
 ## Context
 
 Algorithms and data structures are the backbone of software performance. Choosing the right one can dramatically improve runtime, scalability, and resource usage.
 This project shows, with **real benchmarks in Java**, how different choices impact execution time in tasks developers face daily.
-
----
 
 ## Study Cases
 
@@ -52,8 +46,6 @@ for (Integer num : list) {
 }
 ```
 
----
-
 ### 2️⃣ Frequency Counting: HashMap vs. TreeMap
 
 **Problem:** Count how many times each number appears.
@@ -75,8 +67,6 @@ Map<Integer, Integer> freqTree = new TreeMap<>();
 freqTree.put(num, freqTree.getOrDefault(num, 0) + 1);
 ```
 
----
-
 ### 3️⃣ Sorting Performance: Bubble Sort vs. Collections.sort()
 
 **Problem:** Sort a list of numbers.
@@ -91,9 +81,6 @@ freqTree.put(num, freqTree.getOrDefault(num, 0) + 1);
 **Benchmark result example (50,000 elements):**
 - Bubble Sort took minutes;
 - Collections.sort() completed in milliseconds.
-
-
----
 
 ## Mathematical Analysis
 
@@ -114,7 +101,6 @@ freqTree.put(num, freqTree.getOrDefault(num, 0) + 1);
 | Frequency counting   | TreeMap                    | O(n log n) | ⚠️ Use if ordered keys needed   |
 | Sorting              | Bubble Sort                | O(n²)      | ❌ No                            |
 | Sorting              | TimSort (Collections.sort) | O(n log n) | ✅ Yes                           |
-
 
 ## Conclusions
 
